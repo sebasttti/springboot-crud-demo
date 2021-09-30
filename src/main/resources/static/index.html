@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>spring boot crud demo</title>
+		<link rel="stylesheet" type="text/css" href="common.css"/>
+	</head>
+	<body>
+		<div id="app">
+			<h2>Spring boot crud demo</h2>
+			<a href="#" @click="newEmployee()" >Crear nuevo empleado</a>
+			<p>Lista de empleados</p>
+			<table id="employees-table" >
+				<thead>
+					<tr>
+						<th>id</th>
+						<th>nombre</th>
+						<th>email</th>
+						<th>acciones</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr v-for="employee in employees" >
+						<td>{{employee.id}}</td>
+						<td>{{employee.name}}</td>
+						<td>{{employee.email}}</td>
+						<td>
+							<a href="#" @click="showEmp(employee.id)" >Editar</a>
+							<a href="#" @click="deleteEmp(employee.id)" >Borrar</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			
+			<div id="employee_form" v-if="formVisible" >
+				<h2>Empleado</h2>
+				<div>
+					<input id="employee_id" type="hidden" v-model="employee.id" ><br />
+					<label for="employee_name" class="employee-label" >nombre</label><input id="employee_name" type="text" v-model="employee.name" ><br/><br/>
+					<label for="employee_email" class="employee-label" >correo</label><input id="employee_email" type="text" v-model="employee.email" ><br/><br/>
+					<button class="save-button" @click="saveEmployee()" >Guardar</button>
+					<button class="cancel-button" @click="cancelForm()" >Cancelar</button>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		<script type="text/javascript" src="axios.min.js" ></script>
+		<script type="text/javascript" src="vue.min.js" ></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>

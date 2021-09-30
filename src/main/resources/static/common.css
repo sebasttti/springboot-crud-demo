@@ -1,0 +1,72 @@
+body{
+	background:rgb(50,50,50);
+	color: rgb(255,255,255);
+}
+
+a{
+	color: rgb(0,50,250);
+}
+
+#app{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#employees-table{
+	width:800px;
+	border-collapse: collapse;
+}
+
+#employees-table th, #employees-table td {
+	border: 1px solid white;
+}
+
+ #employees-table td {
+	text-align: center;
+}
+
+.employee-label{
+	display:inline-block;
+	width: 130px;
+}
+
+.save-button{
+	border: none;
+	margin-top: 20px;
+	color:rgb(255,255,255);
+	background: linear-gradient(0deg, rgb(192, 192, 192) , rgb(128, 128, 128) );
+	padding: 10px;
+	border-radius: 12px;	
+}
+
+
+.cancel-button{
+	border: none;
+	margin-top: 20px;
+	margin-left: 150px;
+	color:rgb(255,255,255);
+	background: linear-gradient(0deg, rgb(192, 192, 192) , rgb(128, 128, 128) );
+	padding: 10px;
+	border-radius: 12px;	
+}
+
+#employee_form{
+	padding: 20px 25px;
+	background: white;
+	color: black;
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);	
+}
+
+
+#overlay{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: calc(100%);
+	height: calc(100%);
+	background-color: black;	
+}

@@ -1,0 +1,27 @@
+{"properties": [
+  {
+    "name": "spring.datasource.dbcp.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.dbcp.driver-class-name'"
+  },
+  {
+    "name": "spring.datasource.dbcp.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.dbcp.url'"
+  },
+  {
+    "name": "spring.datasource.dbcp.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.dbcp.username'"
+  },
+  {
+    "name": "spring.datasource.dbcp.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.dbcp.password'"
+  },
+  {
+    "name": "spring.datasource.dbcp.min-idle",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.dbcp.min-idle'"
+  }
+]}
